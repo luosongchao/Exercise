@@ -27,12 +27,12 @@ using namespace std;
 /**
  * 注：
  *   自定义比较函数
+ *   第一个参数值>第二个参数值，返回正数；第一个参数值<第二个参数值，返回负数；两个参数值相等，返回0
  *	 升序输出
  */ 
 int compare(const int *a,const int *b)
 {
 	return (*a-*b);
-
 }
 
 /**
@@ -43,7 +43,7 @@ int lookup(int key,int *array,int length)
 {
 	int *value=(int *)bsearch(&key,array,length,sizeof(int),
 			(int (*)(const void *,const void *))compare);
-	
+
 	if(value!=NULL)
 	{
 		return 1;
@@ -65,7 +65,7 @@ int main()
 		cout<<array[i]<<endl;
 	}
 
-	int key;
+	int key;	//待查找关键字
 	while(true)
 	{
 		cout<<"find what:";

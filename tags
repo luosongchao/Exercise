@@ -4,17 +4,11 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.5	//
-NELEM	bsearch.cpp	25;"	d	file:
-aesc	sort.cpp	/^bool aesc(char a,char b)$/;"	f
-compare	bsearch.cpp	/^int compare(const int *a,const int *b)$/;"	f
-compare	qsort.cpp	/^int compare(const void *a,const void *b)$/;"	f
-compare2	qsort.cpp	/^int compare2(const void *a,const void *b)$/;"	f
-compare_down	sort.cpp	/^bool compare_down(int a,int b)$/;"	f
-compare_up	sort.cpp	/^bool compare_up(int a,int b)$/;"	f
-desc	sort.cpp	/^bool desc(char a,char b)$/;"	f
-display	stringArray.c	/^void display()$/;"	f
-lookup	bsearch.cpp	/^int lookup(int key,int *array,int length)$/;"	f
-main	bsearch.cpp	/^int main()$/;"	f
-main	qsort.cpp	/^int main()$/;"	f
-main	sort.cpp	/^int main()$/;"	f
-main	stringArray.c	/^int main(char *arg[],int count)$/;"	f
+Delete	trie.cpp	/^void Delete( TrieNode * location)$/;"	f
+Insert	trie.cpp	/^void Insert(TrieNode *root,const char *word)$/;"	f
+Search	trie.cpp	/^bool Search( TrieNode *root ,const char *word)$/;"	f
+TrieNode	trie.cpp	/^struct  TrieNode$/;"	s	file:
+branchNum	trie.cpp	/^const int branchNum=26;	\/\/26个英文字母$/;"	v
+isStr	trie.cpp	/^	bool isStr;	\/\/标示是否是一个完整的字符串$/;"	m	struct:TrieNode	file:
+main	trie.cpp	/^int main()$/;"	f
+next	trie.cpp	/^	TrieNode *next[branchNum];	\/\/每个字符的Trie树分支可能存在26个分支$/;"	m	struct:TrieNode	file:
